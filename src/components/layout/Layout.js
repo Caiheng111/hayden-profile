@@ -8,7 +8,7 @@
 import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 
-// import Navigation from "@components/layout/Navigation"
+import Navigation from "../sections/Navigation"
 // import Overlay from "@components/layout/Overlay"
 // import PageProgress from "@components/layout/PageProgress"
 // import SocialDrawer from "@components/social/SocialDrawer"
@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
     return (
         <div className="main">
             {/* <PageProgress /> */}
-            {/* <Navigation /> */}
+            <Navigation />
             <main id="main" className="">
                 {/* <Overlay name="overlay-main" /> */}
                 {children}

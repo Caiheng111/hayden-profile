@@ -5,6 +5,7 @@ General
 
 @import "general/variables";
 @import "general/base";
+@import "general/mixins";
 
 
 /*****
@@ -12,6 +13,8 @@ Components
 ******/
 
 @import "components/landing";
+@import "components/navigation";
+@import "components/about";
 
 
 
