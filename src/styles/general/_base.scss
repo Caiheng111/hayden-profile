@@ -17,14 +17,20 @@ html, body {
 
 h1 {
     font-size: 8rem;
-    font-family: $primary-font-family;
+    font-family: $secondary-font-family;
     color: $dark-tertiary-color;
 }
 
 h2 {
     font-size: 6rem;
-    font-family: $primary-font-family;
+    font-family: $secondary-font-family;
     color: $dark-tertiary-color;
+}
+
+button{
+    background: none;
+    border: none;
+    outline: none;
 }
 
 // span{
