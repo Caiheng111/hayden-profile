@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import Fade from "react-reveal/Fade"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 export const navigateTo = e => {
     if (window.location.pathname === "/") {
@@ -27,90 +29,72 @@ export default function Navigation() {
         <>
             <div>
                 <button className="hamburgMenu" onClick={handleOpenMenu}>
-                    MENU
+                    <FontAwesomeIcon icon={faBars} size="1x" bounce />
                 </button>
+                {showNav && (
+                    <nav className="nav">
+                        <button onClick={handleCloseMenu} className="closeMenu">
+                            X<i class="fa fa-Xmark"></i>
+                        </button>
+
+                        <Fade cascade>
+                            <ul className="nav__list">
+                                <li className="nav__item">
+                                    <Link
+                                        to="/#about"
+                                        className="nav__link"
+                                        data-tooltip="About"
+                                        data-smooth-scroll="about"
+                                        onClick={navigateTo}
+                                    >
+                                        <span className="nav__link-text anim--fadeInRight">
+                                            ABOUT
+                                        </span>
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link
+                                        to="/blog"
+                                        className="nav__link"
+                                        data-tooltip="Blog"
+                                    >
+                                        <span className="nav__link-text anim--fadeInRight">
+                                            BLOGS
+                                        </span>
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link
+                                        to="/#projects"
+                                        className="nav__link"
+                                        data-tooltip="projects"
+                                        data-smooth-scroll="projects"
+                                        onClick={navigateTo}
+                                    >
+                                        <span className="nav__link-text anim--fadeInRight">
+                                            PROJECTS
+                                        </span>
+                                    </Link>
+                                </li>
+
+                                <li className="nav__item">
+                                    <Link
+                                        to="/#contact"
+                                        className="nav__link"
+                                        data-tooltip="Contact"
+                                        data-smooth-scroll="contact"
+                                        onClick={navigateTo}
+                                    >
+                                        <span className="nav__link-text">
+                                            CONTACTS
+                                        </span>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </Fade>
+                    </nav>
+                )}
             </div>
-
-            {showNav && (
-                <nav className="nav">
-                    <button className="closeMenu" onClick={handleCloseMenu}>
-                        Close
-                    </button>
-                    <Fade cascade>
-                        <ul className="nav__list">
-                            <li className="nav__item">
-                                <Link
-                                    to="/"
-                                    className="nav__link"
-                                    data-tooltip="Home"
-                                    data-smooth-scroll="landing"
-                                    onClick={navigateTo}
-                                >
-                                    {/* <i className="fas fa-angle-double-right"></i> */}
-                                    <span className="link-text nav__logo-text anim--fadeInRight">
-                                        LOGO
-                                    </span>
-                                </Link>
-                            </li>
-                            <li className="nav__item">
-                                <Link
-                                    to="/#about"
-                                    className="nav__link"
-                                    data-tooltip="About"
-                                    data-smooth-scroll="about"
-                                    onClick={navigateTo}
-                                >
-                                    {/* <i className="fas fa-user"></i> */}
-                                    <span className="nav__link-text anim--fadeInRight">
-                                        About
-                                    </span>
-                                </Link>
-                            </li>
-                            <li className="nav__item">
-                                <Link
-                                    to="/blog"
-                                    className="nav__link"
-                                    data-tooltip="Blog"
-                                >
-                                    {/* <i className="fas fa-blog"></i> */}
-                                    <span className="nav__link-text anim--fadeInRight">
-                                        Blog
-                                    </span>
-                                </Link>
-                            </li>
-                            <li className="nav__item">
-                                <Link
-                                    to="/#featured"
-                                    className="nav__link"
-                                    data-tooltip="Featured"
-                                    data-smooth-scroll="featured"
-                                    onClick={navigateTo}
-                                >
-                                    {/* <i className="fas fa-code-branch"></i> */}
-                                    <span className="nav__link-text anim--fadeInRight">
-                                        Business Projects
-                                    </span>
-                                </Link>
-                            </li>
-
-                            <li className="nav__item">
-                                <Link
-                                    to="/#contact"
-                                    className="nav__link"
-                                    data-tooltip="Contact"
-                                    data-smooth-scroll="contact"
-                                    onClick={navigateTo}
-                                >
-                                    {/* <i className="fas fa-phone"></i> */}
-                                    <span className="nav__link-text">
-                                        Contact
-                                    </span>
-                                </Link>
-                            </li>
-                        </ul>
-                    </Fade>
-                </nav>
-            )}
         </>
     )
 }

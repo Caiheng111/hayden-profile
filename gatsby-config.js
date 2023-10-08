@@ -12,6 +12,12 @@ module.exports = {
         `gatsby-plugin-sass`,
         "gatsby-plugin-sitemap",
         {
+            resolve: "gatsby-plugin-load-script",
+            options: {
+                src: "https://kit.fontawesome.com/116ecaa9e7.js"
+            }
+        },
+        {
             resolve: "gatsby-plugin-manifest",
             options: {
                 icon: "src/images/icon.png"
