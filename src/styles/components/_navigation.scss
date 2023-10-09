@@ -9,7 +9,6 @@
         color: #ffffff;
         z-index: 100;
     }
-
 }
 
 .closeMenu {
@@ -40,7 +39,6 @@
         width: 10rem;
         flex-direction: column;
         cursor: pointer;
-
         // &:hover {
         //     width: 10rem;
         // }
@@ -63,7 +61,6 @@
         //     left: 0px;
         // }
     }
-
 
 
     &__list {
@@ -122,7 +119,7 @@
         color: #000000;
         text-decoration: none;
         position: relative;
-        font-family: $secondary-font-family;
+        font-family: $primary-font-family;
         transition: 200ms;
 
 

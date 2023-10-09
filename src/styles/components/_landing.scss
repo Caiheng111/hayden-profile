@@ -1,19 +1,18 @@
-.landing{
+.landing {
     height: 100vh;
     width: 100%;
-     &__container{
-        display:flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
 
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
 
-     }
-
-     &__typeContents{
+    &__typeContents {
         font-size: 5rem;
-         font-family: $secondary-font-family;
-     color: $dark-tertiary-color;
-     }
-    
+        font-family: $primary-font-family;
+        color: $dark-tertiary-color;
+    }
+
 }
