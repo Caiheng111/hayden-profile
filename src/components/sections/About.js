@@ -40,22 +40,83 @@ export const introTwo = () => {
     )
 }
 
+export const introThree = () => {
+    return (
+        <div>
+            <h3>Current company, job title and responsibilities</h3>
+
+            <div>
+                Including information about your present job provides your
+                updated experience and enables readers to identify your current
+                industry, ambition and skill set
+            </div>
+            <div>
+                <h6> #Adobe Photoshop</h6>
+                <h6> #Adobe Lightroom</h6>
+                <h6> #Adobe Camera Raw</h6>
+            </div>
+        </div>
+    )
+}
+export const introFour = () => {
+    return (
+        <div>
+            <h3>Personal values</h3>
+
+            <div>
+                Describing the principles that are important to you allows you
+                to broadcast your professional identity and show that you care
+                about making an impact.
+            </div>
+            <div>
+                <h6> #Adobe Photoshop</h6>
+                <h6> #Adobe Lightroom</h6>
+                <h6> #Adobe Camera Raw</h6>
+            </div>
+        </div>
+    )
+}
+export const introFive = () => {
+    return (
+        <div>
+            <h3>A personal story:</h3>
+
+            <div>
+                Including an anecdote in your blurb can make you more
+                interesting to your reader.
+            </div>
+            <div>
+                <h6> #Adobe Photoshop</h6>
+                <h6> #Adobe Lightroom</h6>
+                <h6> #Adobe Camera Raw</h6>
+            </div>
+        </div>
+    )
+}
+export const introSix = () => {
+    return (
+        <div>
+            <h3>Goals</h3>
+
+            <div>
+                Letting readers with similar goals know what you hope to
+                accomplish might make them want to work with you.
+            </div>
+            <div>
+                <h6> #Adobe Photoshop</h6>
+                <h6> #Adobe Lightroom</h6>
+                <h6> #Adobe Camera Raw</h6>
+            </div>
+        </div>
+    )
+}
+
 export default function About() {
     const [progress, setProgress] = useState(0)
     const [isDragging, setIsDragging] = useState(false)
     const barRef = useRef(null)
 
-    const contents = [
-        "Enthusiastic and self-motivated full-stack developer. Proficient in HTML5, CSS3, Ruby on rails, JavaScript, React, Ajax, Restful API, nodeJS etc. Problem solver with a strong project management skill, analytical skill. Passionate about coding and hardworking with penchant for meeting deadlines.",
-        "Salut ! Je m'appelle Thomas, un valentinois de 27 ans en quarantaine à Paris et à la recherche de nouvelles opportunités professionnelles dans la capitale en tant que Content Manager.",
-        "Content 3",
-        "Content 4",
-        "Content 5",
-        "Content 6",
-        "Content 7",
-        "Content 8",
-        "Content 9"
-    ]
+    const contents = new Array(6)
 
     const handleRenderContents = contentsIndex => {
         switch (contentsIndex) {
@@ -63,6 +124,15 @@ export default function About() {
                 return introOne()
             case 1:
                 return introTwo()
+
+            case 2:
+                return introThree()
+            case 3:
+                return introFour()
+            case 4:
+                return introFive()
+            case 5:
+                return introSix()
             default:
                 return <></>
         }
@@ -107,8 +177,9 @@ export default function About() {
                     className="about__progressBar"
                     onMouseDown={handleDragStart}
                     onMouseMove={handleDrag}
+                    // onMouseOut={handleDrag}
                     onMouseUp={handleDragEnd}
-                    onMouseLeave={handleDragEnd}
+                    onMouseOver={handleDragEnd}
                 >
                     {/* Background div for the progress bar */}
                     <div className="about__backgroundBar" />
