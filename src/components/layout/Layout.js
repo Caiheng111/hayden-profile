@@ -1,18 +1,6 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React, { useEffect } from "react"
-import PropTypes from "prop-types"
-
 import Navigation from "../sections/Navigation"
-// import Overlay from "@components/layout/Overlay"
-// import PageProgress from "@components/layout/PageProgress"
-// import SocialDrawer from "@components/social/SocialDrawer"
-// import ThemeProvider from "../theme/ThemeProvider"
+import PageProgress from "@components/layout/PageProgress"
 import "../../styles/main.scss"
 
 const Layout = ({ children }) => {
@@ -20,7 +8,7 @@ const Layout = ({ children }) => {
         /** Set Scroll Event Listener */
         document.addEventListener("scrollStart", e => {
             document.title = e.detail
-                ? `${e.detail.anchor.dataset.name} | Lu-Vuong Le`
+                ? `${e.detail.anchor.dataset.name} | Hayden Cai`
                 : null
         })
 
@@ -37,20 +25,13 @@ const Layout = ({ children }) => {
 
     return (
         <div className="main">
-            {/* <PageProgress /> */}
+            <PageProgress />
             <Navigation />
             <main id="main" className="">
-                {/* <Overlay name="overlay-main" /> */}
                 {children}
             </main>
-            <footer></footer>
-            {/* <SocialDrawer /> */}
         </div>
     )
-}
-
-Layout.propTypes = {
-    children: PropTypes.node.isRequired
 }
 
 export default Layout

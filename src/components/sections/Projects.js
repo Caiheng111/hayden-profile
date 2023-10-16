@@ -1,5 +1,7 @@
 import React from "react"
 import { projects } from "../../utils"
+import TWW from "../../assets/images/TWW.png"
+import RejectShop from "../../assets/images/rejectShop.png"
 
 export const Project = ({
     index,
@@ -87,7 +89,21 @@ export default function Projects() {
                 )
             })}
 
-            <h3>Other projects joined</h3>
+            <h3 style={{ marginLeft: "5%" }}>Other projects joined</h3>
+
+            <div className="projects__container">
+                <div className="project__info">
+                    <div className="projectImage">
+                        <div style={{ width: "35%", marginRight: "30px" }}>
+                            <img src={TWW} alt="projectOne" />
+                        </div>
+
+                        <div style={{ width: "35%" }}>
+                            <img src={RejectShop} alt="projectOne" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
