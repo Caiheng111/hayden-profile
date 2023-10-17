@@ -1,0 +1,33 @@
+.blogs{
+    width:100%;
+    padding: 0 8%;
+
+    background-color: black;
+
+   &__title{
+ font-size: 5rem;
+    color: #ffffff;
+    margin-bottom: 50px;
+   }
+
+   &__container{
+    display: flex;
+    width:80%;
+
+
+   }
+
+}
+
+.blog{
+   width:40%;
+   margin-right: 20px;
+   background: #ffffff;
+
+   &__contents{
+      padding:50px
+   }
+
+   
+}
+
