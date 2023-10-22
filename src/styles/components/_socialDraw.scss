@@ -1,0 +1,55 @@
+.drawer {
+    position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        z-index: 2;
+   
+    padding: .5rem;
+    border-radius: 30px;
+
+    &__toggle {
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+
+        & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            padding: 1rem;
+        }
+    }
+
+    &__content {
+
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        margin-bottom: 20px;
+        transition: max-height .1s cubic-bezier(.53,-0.29,.61,1.84);
+
+        & li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 0;
+            margin: 2px 0;
+            border-radius: 100%;
+
+            & img {
+                display: block;
+                width: auto;
+            }
+        }
+    }
+    i, svg{
+        color:#ffffff;
+        font-size: 2rem;
+    }
+}
+

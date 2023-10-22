@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import Navigation from "../sections/Navigation"
 import PageProgress from "@components/layout/PageProgress"
+import SocialDrawer from "@components/layout/SocialDrawer"
 import "../../styles/main.scss"
 
 const Layout = ({ children }) => {
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
         <div className="main">
             <PageProgress />
             <Navigation />
+            <SocialDrawer />
             <main id="main">{children}</main>
         </div>
     )
