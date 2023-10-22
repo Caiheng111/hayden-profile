@@ -1,33 +1,44 @@
-.blogs{
-    width:100%;
-    padding: 0 8%;
+.blogs {
+   width: 100%;
+   padding:  15%;
+   background-color: black;
 
-    background-color: black;
-
-   &__title{
- font-size: 5rem;
-    color: #ffffff;
-    margin-bottom: 50px;
+   &__title {
+      font-size: 5rem;
+      color: #ffffff;
+      margin-bottom: 50px;
    }
 
-   &__container{
-    display: flex;
-    width:80%;
-
-
+   &__container {
+      display: flex;
+      width: 80%;
    }
 
 }
 
-.blog{
-   width:40%;
+.blog {
+   width: 40%;
+
    margin-right: 20px;
    background: #ffffff;
 
-   &__contents{
-      padding:50px
+   &__contents {
+      padding: 50px
    }
-
-   
 }
 
+.blog-template {
+    color: #ffffff;
+   h2 {
+      font-size: 2rem;
+      margin: 30px 0;
+   }
+   p {
+      font-size: 1.2rem;
+      color: #ffffff
+   }
+   img{
+      width:100%;
+      margin: 20px 0;
+   }
+}

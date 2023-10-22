@@ -1,4 +1,7 @@
 .hamburgMenu {
+    position: absolute;
+    top:5%;
+    left:5%;
     font-size: 2rem;
     color: #ffffff;
     cursor: pointer;
@@ -12,8 +15,8 @@
 }
 
 .closeMenu {
-    position: absolute;
-    top: 30px;
+    // position: absolute;
+    // top: 30px;
     font-size: 1.5rem;
 
     cursor: pointer;
@@ -21,22 +24,24 @@
 }
 
 .nav {
-    // position: fixed;
+    position: fixed;
+  left: -200px;
+  width: 200px;
     bottom: 0;
-    width: 100%;
-    // height: 6rem;
+
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #ffffff;
     z-index: 999;
-    transition: width 200ms ease;
+  transition: left 0.3s ease-out;
     padding-top: 10%;
+   
 
     @include breakpoint(desktop) {
         height: 100vh;
-        top: 0;
-        width: 10rem;
+
+     
         flex-direction: column;
         cursor: pointer;
         // &:hover {
@@ -65,7 +70,7 @@
 
     &__list {
         list-style: none;
-        padding: 0;
+        padding: 30px 0;
         margin: 0;
         display: flex;
         flex-direction: row;
@@ -77,6 +82,7 @@
             flex-direction: column;
         }
     }
+    
 
     &__item {
         width: 100%;
@@ -134,4 +140,8 @@
 
         }
     }
+}
+
+.nav.showNav {
+ left: 0;
 }

@@ -27,9 +27,7 @@ const Layout = ({ children }) => {
         <div className="main">
             <PageProgress />
             <Navigation />
-            <main id="main" className="">
-                {children}
-            </main>
+            <main id="main">{children}</main>
         </div>
     )
 }

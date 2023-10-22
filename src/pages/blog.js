@@ -28,7 +28,6 @@ export const query = graphql`
 `
 
 const BlogPage = ({ data }) => {
-    console.log("HERE----------------", data)
     return (
         <Layout>
             <div className="blogs">
