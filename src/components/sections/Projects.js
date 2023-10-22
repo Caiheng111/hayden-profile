@@ -13,7 +13,7 @@ export const Project = ({
     projectLink
 }) => {
     return (
-        <div className="projects__container">
+        <div className="projects__container" id="projects">
             <div
                 className={
                     imagePositionReverse

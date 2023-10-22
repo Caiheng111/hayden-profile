@@ -6,11 +6,11 @@ description: What is CSS Specificity? How do you calculate it?
 tags:
   - web
 ---
-# What is CSS Specificity?
+## What is CSS Specificity?
 
 CSS Specificity is a set of rules and how a browser decides which CSS styles are applied to an element. This is based on matching rules made up of different CSS selectors. CSS Specificity becomes important as it could be a reason as to why you find that your CSS doesn’t always work as expected.
 
-# An Example
+## An Example
 Here we have some HTML that has an unordered list with some list items. The first list item has a class of ‘first-item’.
 
 ![HTML Example](https://dev-to-uploads.s3.amazonaws.com/i/8oug9umvob4yqge14vs3.png)
@@ -21,7 +21,7 @@ Here we have our CSS, we want to target the list item with the class ‘first-it
 
 If you guessed blue, you are correct! This is because the specificity is higher in the second selector. To understand this, we will go through how CSS Specificity is calculated in the next section.
 
-# How To Calculate CSS Specificity
+## How To Calculate CSS Specificity
 
 You might be wondering **how** do you actually calculate the Specificity? 
 
@@ -70,17 +70,3 @@ Of course, the order in which you write does matter to some degree, for example,
 ![CSS Cascade Importance](https://dev-to-uploads.s3.amazonaws.com/i/heqe4rv0pp6clja6wibs.png)
 
 The selector written last will take effect and as a result, the color would be red because it was written later than the first one due to how CSS cascades styles. 
-
-# Important Notes
-
-- The **Universal Selector** * contributes nothing to the specificity, in other words, it has 0,0,0,0. The same also goes for any combinators such as (~) or (+).
-- The :not() pseudo-class also contributes nothing, however, elements or classes **in the parentheses** do count.
-- Inline styles **always overwrite styles in an external CSS document** so they have the highest specificity.
-- The **!important is an exception** in CSS specificity as anything marked with !important will **always take the highest priority**. Although it is best to avoid using !important and trying to level the specificity.
-
-Finally, It can be tedious to always calculate this manually as such I've listed some good calculators below. This calculator can help you calculate the specificity by just pasting in the CSS style declarations.
-
-# CSS Specificity Calculators
-
-- https://specificity.keegan.st/
-- https://www.codecaptain.io/tools/css-specificity-calculator
