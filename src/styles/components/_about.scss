@@ -7,8 +7,22 @@
   justify-content: center;
   align-content: center;
 
+  @include breakpoint(phone) {
+
+    height: 50vh;
+    padding: 0% 0;
+
+  }
+
   &__container {
     width: 50%;
+
+
+    @include breakpoint(phone) {
+
+      width: 90%;
+
+    }
   }
 
   &__contents {
@@ -16,8 +30,18 @@
     padding: 0 10%;
     color: #ffffff;
 
-  // border:2px solid #ffffff;
-  // margin-bottom: 50px;
+    @include breakpoint(phone) {
+      height: 30vh;
+      padding: 0 5%;
+    }
+
+    @include breakpoint(phone) {
+      h3,
+      span {
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
   }
 
   &__progressBar {
@@ -78,11 +102,11 @@
   transform: translate(-50%, -50%);
   color: white;
   font-weight: bold;
-  
+
 }
 
 .introOne {
- 
+
 
   &__container {
     & h3 {
@@ -96,15 +120,16 @@
 
 
   &__skills {
-    h6{
+    h6 {
       font-size: 1.2rem;
       margin-bottom: 10px;
       // text-shadow: 1px 1px 1px #ffffff;
       margin-right: 10px;
     }
+
     display: flex;
     justify-content: flex-start;
-  
-    
+
+
   }
 }

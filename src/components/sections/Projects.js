@@ -89,17 +89,35 @@ export default function Projects() {
                 )
             })}
 
-            <h3 style={{ marginLeft: "5%" }}>Other projects joined</h3>
+            <h3 style={{ marginLeft: "5%", marginTop: "40px" }}>
+                Other projects joined
+            </h3>
 
-            <div className="projects__container">
+            <div className="projects__container otherProjects">
                 <div className="project__info">
                     <div className="projectImage">
-                        <div style={{ width: "35%", marginRight: "30px" }}>
+                        <div className="image_container">
                             <img src={TWW} alt="projectOne" />
+                            <button className="view_button">
+                                <a
+                                    target="_blank"
+                                    href="https://www.rejectshop.com.au/"
+                                >
+                                    View the project
+                                </a>
+                            </button>
                         </div>
 
-                        <div style={{ width: "35%" }}>
+                        <div className="image_container">
                             <img src={RejectShop} alt="projectOne" />
+                            <button className="view_button">
+                                <a
+                                    target="_blank"
+                                    href="https://www.rejectshop.com.au/"
+                                >
+                                    View the project
+                                </a>
+                            </button>
                         </div>
                     </div>
                 </div>
