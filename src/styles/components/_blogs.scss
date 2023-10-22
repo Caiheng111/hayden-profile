@@ -1,6 +1,6 @@
 .blogs {
    width: 100%;
-   padding:  15%;
+   padding: 15%;
    background-color: black;
 
    &__title {
@@ -9,36 +9,66 @@
       margin-bottom: 50px;
    }
 
+
    &__container {
       display: flex;
       width: 80%;
+   }
+
+   @include breakpoint(phone) {
+      padding: 10%;
+      padding-top: 40%;
+
+      &__title {
+         font-size: 3rem;
+      }
+
+      &__container {
+         flex-direction: column;
+         width: 100%;
+      }
+
    }
 
 }
 
 .blog {
    width: 40%;
-
    margin-right: 20px;
    background: #ffffff;
 
    &__contents {
       padding: 50px
    }
+
+   @include breakpoint(phone) {
+      margin-right: 0px;
+      margin-bottom: 50px;
+      width: 100%;
+
+      img {
+         height: 230px;
+      }
+   }
 }
 
 .blog-template {
-    color: #ffffff;
+   color: #ffffff;
+
    h2 {
       font-size: 2rem;
       margin: 30px 0;
    }
+
    p {
       font-size: 1.2rem;
       color: #ffffff
    }
-   img{
-      width:100%;
+
+   img {
+      width: 100%;
       margin: 20px 0;
    }
+
+
 }

@@ -34,6 +34,10 @@ const PostContainer = styled.div`
     margin: 0 auto;
     font-size: 1.6rem;
     padding: 10%;
+
+    @media only screen and (max-width: 768px) {
+        padding-top: 40%;
+    }
 `
 
 const PostTitle = styled.span`
@@ -46,7 +50,7 @@ const PostTitle = styled.span`
 
     @media only screen and (max-width: 768px) {
         margin-top: 2rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 `
 
@@ -54,12 +58,6 @@ const PostDate = styled.span`
     display: block;
     margin: 0 0 1rem 0;
     color: #bbb;
-`
-
-const PostTags = styled.div`
-    display: flex;
-    flex-flow: row wrap;
-    margin-bottom: 1rem;
 `
 
 const PostImage = styled.img`
@@ -71,6 +69,9 @@ const PostImage = styled.img`
 const PostAuthor = styled.div`
     display: flex;
     margin: 4rem 0;
+    @media only screen and (max-width: 768px) {
+        margin: 0;
+    }
 `
 
 const PostAuthorDetails = styled.div`
@@ -84,6 +85,11 @@ const PostProfilePic = styled.img`
     border-radius: 100%;
     width: 4rem;
     height: 4rem;
+
+    @media only screen and (max-width: 768px) {
+        width: 2rem;
+        height: 2rem;
+    }
 `
 
 const PostSocialLinkWrapper = styled.div`
@@ -95,6 +101,9 @@ const PostSocialLinkWrapper = styled.div`
 const PostSocialLink = styled.span`
     margin-right: 10px;
     color: #aaa;
+    @media only screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
 `
 
 const PostSocialProfile = styled.div`

@@ -10,12 +10,6 @@ tags:
     - Web Dev
 ---
 
-```javascript{1,2}:title=test.js
-var test = "test"
-console.log("First Software Engineer Job Experiences")
-test(2, 3)
-```
-
 Just starting out your first job as a software engineer? It definitely can be a nerve wracking experience not knowing what to expect or know if you'll even manage to do well in the role and reach expectations.
 
 I'd like to share 5 lessons I've learned during my first year as a software engineer and is something I wish I would have known much earlier or simply lessons that have solidified for me over time.

@@ -3,18 +3,6 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
-export const navigateTo = e => {
-    if (window.location.pathname === "/") {
-        e.preventDefault()
-
-        const scrollToElement = document.getElementById(
-            e.currentTarget.dataset.smoothScroll
-        )
-
-        scrollToElement.scrollIntoView({ behavior: "smooth" })
-    }
-}
-
 export default function Navigation() {
     const [showNav, setShowNav] = useState(false)
 
@@ -23,6 +11,19 @@ export default function Navigation() {
     }
     const handleCloseMenu = () => {
         setShowNav(false)
+    }
+
+    const navigateTo = e => {
+        setShowNav(false)
+        if (window.location.pathname === "/") {
+            e.preventDefault()
+
+            const scrollToElement = document.getElementById(
+                e.currentTarget.dataset.smoothScroll
+            )
+
+            scrollToElement.scrollIntoView({ behavior: "smooth" })
+        }
     }
     return (
         <>

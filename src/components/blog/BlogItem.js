@@ -26,6 +26,10 @@ const PostContent = styled.p`
 const ImageContainer = styled.div`
     width: 100%;
     height: 300px;
+
+    @media only screen and (max-width: 468px) {
+        height: 230px;
+    }
 `
 
 const PostImage = styled.img`
@@ -42,7 +46,6 @@ const PostTags = styled.div`
 `
 
 function BlogItem({ post }) {
-    console.log("post", post)
     return (
         <div className="blog">
             <Link to={post.fields.slug}>
