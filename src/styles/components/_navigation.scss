@@ -91,7 +91,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 3px;
+        padding:  3px;
 
         @include breakpoint(desktop) {
             height: initial;
@@ -127,6 +127,7 @@
         position: relative;
         font-family: $primary-font-family;
         transition: 200ms;
+        padding:10px 0;
 
 
         @include breakpoint(desktop) {
