@@ -1,8 +1,8 @@
 ---
-title: 5 Lessons I've learned when I was an intern
+title: 5 Things I Learned When I Was a Developer Intern
 date: 2020-04-20T10:57:54.764Z
 thumbnail: /blog-1.png
-description: 5 Lessons I've learned during my first year as a Software Engineer
+description: Starting as a web developer intern is an enlightening journey. Fresh out of school or perhaps in the middle of your studies, stepping into the real world of web development provides insights that classrooms and online courses can only hint at. Here’s a reflection on the five key takeaways from my experience as a web developer intern.
 tags:
     - UX / UI
     - Programming
@@ -14,37 +14,39 @@ Just starting out your first job as a software engineer? It definitely can be a 
 
 I'd like to share 5 lessons I've learned during my first year as a software engineer and is something I wish I would have known much earlier or simply lessons that have solidified for me over time.
 
-## 1. Don't be afraid to ask for help!
+## 1. The Importance of Soft Skills
 
-When starting out, especially as a junior there will be many times where we run into problems that we may need help to solve. You might feel as if you are bothering your coworkers by asking too many questions too often but I advise you to always ask for help when you need it. The worst thing you want to do is spend too long on a problem when a senior can help point you in right direction to the solution.
+When you think of web development, coding and technical acumen spring to mind. But the workplace taught me that soft skills—like communication, teamwork, and adaptability—are equally essential.
 
-Of course that being said you should attempt to research and see if you can solve the problem yourself first to make things easier on your coworker as it will not do much good for you and the team to spend too much time on the problem or go for help without having tried solving it.
+Communication: Whether it’s explaining your code to non-tech-savvy team members or asking the right questions to get the project requirements clear, effective communication is vital.
 
-So don't be shy to ask for help since your team members are there to support and guide you as a new developer!
+Teamwork: The synergy of a coordinated team amplifies the productivity and creativity of individual members. Learning to appreciate everyone's strengths and supporting their weaknesses is crucial.
 
-## 2. No need to rush / You don't need to know everything
+Adaptability: In the fast-paced world of tech, change is the only constant. Being open to feedback, learning from mistakes, and being willing to adjust when necessary are key traits.
 
-There have been many times during my experiences at my company where I wasn't aware of the specific technology or other things I thought I should definitely know which made my confidence levels go down.
 
-For example getting used to the large codebase was taking quite a while and I felt like I was too slow at learning. Fortunately this isn't the case as it initially seems, it generally isn't expected for new engineers to know everything or necessarily pick things up with amazing speed.
+## 2. You Don't Know What You Don't Know
 
-Remember to focus on the important thing, you are there to grow and learn in a way where you are able to contribute to the company. Everyone has different speeds to get to a comfortable stage (whether it's 6 months or 12 months) so there is no need to feel rushed, take it slow and focus on ingesting everything at your own pace. Over time you will begin to pick things up and understand things more.
+There's a vast array of tools, languages, and best practices in web development. As an intern, I realized there's so much I wasn't aware of. This was both overwhelming and exciting. It's essential to maintain the humility to admit when you don't know something and the curiosity to learn continuously.
 
-## 3. Real experience is vastly different from formal education
+## 3. Mentorship is Priceless
 
-This is something I have felt and could vary for others but for me things we are taught in formal education are not often as comparable to having real experience in the workforce. For example we are taught agile practices in formal educations but being in a real world cross functional team that might consist of BA's, QA's, Developers/Engineers and other roles is a different experience in itself.
 
-How every role interacts with each other and how the business side of things work is something we are not taught but is simply gained with experience over time and is valuable to have as a software engineer.
+One of the most valuable aspects of my internship was the guidance I received from senior developers. They provided insights that I would not have gained from books or courses. Their feedback on my code, advice on best practices, and the wisdom they shared about navigating the tech industry were indispensable. I learned the importance of seeking out mentors and, in turn, giving back by mentoring others once I gained more experience.
 
-## 4. Imposter Syndrome strikes again?
 
-We come to the infamous Imposter Syndrome once again. Fear not if you experience this feeling, it's a common emotion for many developers...even well experienced developers!
+## 4. Keep Learning
 
-You might feel this way because you can't solve a bug or you make a mistake at work. Typically imposter syndrome is a tough feeling to get rid of, you feel inadequate and your confidence in your ability as a developer is shaken.
+The tech world, especially web development, is ever-evolving. New tools, languages, and best practices emerge almost daily. As an intern, I was quickly exposed to the vastness of the web development landscape. At times, it felt like trying to drink from a firehose. However, I learned to embrace this constant change and use it as motivation. Continuous learning became my mantra.
 
-Don't put too much pressure on yourself, don't rush the process and remember you are not alone in this. I like to follow a **'Fail Fast, Fail Often'** approach. Failure is the key to growing ourselves and becoming a better engineer.
 
-> "Would you like me to give you a formula for success? It's quite simple, really: Double your rate of failure. You are thinking of failure as the enemy of success. But it isn't at all. You can be discouraged by failure or you can learn from it, so go ahead and make mistakes. Make all you can. Because remember that's where you will find success." - Thomas J. Watson
+Staying Updated: It's essential to keep an eye on the latest trends, not just to stay relevant but to provide the best solutions for the challenges at hand.
+
+
+Asking Questions: There's no shame in admitting you don't know something. It's a starting point for growth. Every question I asked led to new knowledge.
+
+Dedicated Learning Time: Setting aside regular time for learning—whether it's taking a new course, attending workshops, or just practicing—helps in keeping the skills sharp.
+
 
 ## 5. Keep going and don't give up
 
