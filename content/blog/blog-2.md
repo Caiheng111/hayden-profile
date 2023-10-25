@@ -1,7 +1,7 @@
 ---
 title: CSS Specificity Explained
 date: 2020-05-09T12:26:41.207Z
-thumbnail: /blog-3.png
+thumbnail: /blog-2.png
 description: What is CSS Specificity? How do you calculate it?
 tags:
   - web

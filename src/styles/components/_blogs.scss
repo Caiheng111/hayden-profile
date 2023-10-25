@@ -12,7 +12,7 @@
 
    &__container {
       display: flex;
-      width: 80%;
+      width: 100%;
    }
 
    @include breakpoint(phone) {
