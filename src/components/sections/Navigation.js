@@ -92,8 +92,8 @@ export default function Navigation() {
                             href="/Hayden_Cai_Resume.pdf"
                             className="nav__link"
                             target="_blank"
-                            data-tooltip="Resume"
-                            download
+                            // data-tooltip="Resume"
+                            // download
                         >
                             <span className="nav__link-text anim--fadeInRight">
                                 RESUME
@@ -101,7 +101,7 @@ export default function Navigation() {
                         </a>
                     </li>
 
-                    <li className="nav__item">
+                    {/* <li className="nav__item">
                         <Link
                             to="/#contact"
                             className="nav__link"
@@ -111,7 +111,7 @@ export default function Navigation() {
                         >
                             <span className="nav__link-text">CONTACTS</span>
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
         </>
