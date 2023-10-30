@@ -26,14 +26,16 @@ export const Project = ({
                         : "project__info_reverse"
                 }
             >
-                <div
+                <a
+                    target="_blank"
+                    href={projectLink}
                     className="projectImage"
                     style={{
                         width: imagePositionReverse ? "100%" : "100%"
                     }}
                 >
                     <img src={imageName} alt="projectOne" />
-                </div>
+                </a>
 
                 <div
                     className="project__contents"
