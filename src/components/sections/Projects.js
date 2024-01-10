@@ -15,7 +15,8 @@ export const Project = ({
     keyAchievements,
     projectTime,
     tecSkills,
-    viewProject
+    viewProject,
+    referLink
 }) => {
     return (
         <div className="projects__container" id="projects">
@@ -87,6 +88,14 @@ export const Project = ({
                             </a>
                         </button>
                     )}
+
+                    {referLink && (
+                        <button className="view_button">
+                            <a target="_blank" href={referLink}>
+                                View Reference Link
+                            </a>
+                        </button>
+                    )}
                 </div>
             </div>
         </div>
@@ -112,6 +121,7 @@ export default function Projects() {
                         keyAchievements={projectIn.keyAchievements}
                         tecSkills={projectIn.tecSkills}
                         viewProject={projectIn.viewProject}
+                        referLink={projectIn?.referLink}
                     />
                 )
             })}
@@ -124,10 +134,9 @@ export default function Projects() {
                 <div className="project__info">
                     <div className="projectImage">
                         <div className="image_container">
-                            {/* <button className="view_button"> */}
                             <a
                                 target="_blank"
-                                href="https://www.rejectshop.com.au/"
+                                href="https://www.totallyworkwear.com.au/"
                             >
                                 <img src={TWW} alt="projectOne" />
                             </a>

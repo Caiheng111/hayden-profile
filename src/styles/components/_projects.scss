@@ -174,9 +174,8 @@
     }
 
     .view_button {
-
-        width: 120px;
-        height: 30px;
+        min-width: 120px;
+        padding:5px 10px;
         border: 1px solid #6a6a6a;
         border-radius: 10px;
         margin-bottom: 20px;
