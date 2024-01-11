@@ -30,7 +30,9 @@ export const projects = [
             "Wrote unit testing for React component by using Jest",
             "Reduced the codes quality issues"
         ],
-        viewProject: false
+        viewProject: false,
+        referLink:
+            "https://www.itnews.com.au/news/bendigo-bank-launches-composable-lending-platform-602879#:~:text=The%20composable%20lending%20platform%20is,mortgage%20brokers%20nationwide%20in%202024."
     },
     {
         index: "02",
@@ -48,7 +50,7 @@ export const projects = [
             "GraphQL"
         ],
         tecSkills: null,
-        projectLink: "https://maap.cc/au",
+        projectLink: "https://www.aftershockpc.com.au/",
         projectIntro: `A leading platform for customized high-performance gaming computers and laptops in Australia.Technologies Used: Specialized in creating a fast, responsive, and intuitive user interface using a mix of React.js and Next.js for server-side rendering.
                        `,
 
